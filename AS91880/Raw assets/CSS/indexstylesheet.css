@@ -1,0 +1,91 @@
+﻿body {
+    
+}
+/* layout of index page*/
+.layout {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 2fr;
+    grid-template-rows: 200px 100px 7fr 1fr;
+    grid-template-areas: 
+        "logo banner banner banner" 
+        "nav nav nav nav" 
+        "main main main side"
+        "footer footer footer footer";
+    grid-gap: 0;
+}
+/* All boxes code*/
+.box {
+    border-width: 2px;
+    border-color: black;
+    border-style: groove;
+    padding: 20px;
+    border-radius: 0px;
+    text-align: center;
+    background-color: #116655;
+}
+/* Logo code*/
+.logo {
+    grid-area: logo;
+    padding: 0px;
+    border-radius: 0px;
+    border-width: 2px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 197px;
+    width: 197px;
+}
+/* banner */
+.banner {
+    grid-area: banner;
+    font-family: 'Spicy Rice', cursive;
+    font-size: 100px;
+    font-style: normal;
+    background-color: #116655;
+    color: #220011;
+    padding: 20px;
+   
+}
+/* Nav */
+.nav {
+    grid-area: nav;
+    background-color: #661122;
+    font-size: 25px;
+}
+/* main */
+.main {
+    grid-area: main;
+    background-color: #81B622;
+    border-radius: 0px;
+}
+/* sidebar */
+.side {
+    grid-area: side;
+    text-align: center;
+}
+/* footer */
+.footer {
+    grid-area: footer;
+    background-color: #661122;
+}
+a {
+    font-size: 25px;
+    color: #ECF87F;
+}
+    a:visited {
+        color: #220011;
+    }
+    a:active {
+        color: blue;
+    }
+
+p1 {
+    font-size: 30px;
+    color: #220011;
+    text-decoration: underline;
+}p {
+     text-decoration: none;
+ }
+
+
+ 
